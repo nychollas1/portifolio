@@ -1,0 +1,209 @@
+/* ======= Estilo Global ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    scroll-behavior: smooth;
+}
+
+/* ======= Navbar ======= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo {
+    color: #58a6ff;
+    font-size: 1.6rem;
+}
+
+.logo span {
+    color: #1f6feb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #c9d1d9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #58a6ff;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #58a6ff;
+    cursor: pointer;
+}
+
+/* ======= Hero Section ======= */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #0d1117, #161b22);
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero span {
+    color: #58a6ff;
+}
+
+.hero p {
+    color: #8b949e;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    background-color: #238636;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2ea043;
+}
+
+/* ======= Seções ======= */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #58a6ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ======= Habilidades ======= */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #c9d1d9;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    border-color: #58a6ff;
+    transform: scale(1.1);
+}
+
+/* ======= Projetos ======= */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #58a6ff;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+/* ======= Contato ======= */
+.contato {
+    text-align: center;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* ======= Rodapé ======= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+}
+
+/* ======= Responsivo ======= */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #161b22;
+        flex-direction: column;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s;
+    }
+
+    .nav-links.active {
+        height: 220px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
